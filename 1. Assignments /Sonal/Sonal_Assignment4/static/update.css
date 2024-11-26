@@ -1,0 +1,9 @@
+body {
+    background-image: url('C:/Users/TEST/Desktop/flask_task_manager/static/background.jpg'); /* Absolute path */
+    background-size: cover;           /* Scale the image to cover the entire page */
+    background-position: center;      /* Center the image */
+    background-repeat: no-repeat;     /* Prevent tiling */
+    background-attachment: fixed;     /* Keep it fixed during scroll */
+    height: 100vh;                    /* Ensure the body takes full viewport height */
+    margin: 0;                        /* Remove default margin */
+}
