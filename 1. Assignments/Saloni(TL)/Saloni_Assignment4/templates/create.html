@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Create Task</title>
+</head>
+<body>
+    <h1>Create Task</h1>
+    <div class="container">
+    <form action="/create" method="POST">
+        <label for="description" class="text">Task Description:</label>
+        <input type="text" name="description" required>
+        <br><br>
+        <label for="status" class="text">Status:</label>
+        <label class="text">
+        <input type="checkbox" name="status" value="1" class="text"> Complete
+        <br><br>
+        </label>
+        <button type="submit" class="button">Create Task</button>
+    </form>
+    </div>
+</body>
+</html>
