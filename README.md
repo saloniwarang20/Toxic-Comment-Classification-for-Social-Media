@@ -1,4 +1,4 @@
-# Toxic Comment Classification using Flask 🔍
+# Toxic Comment Classification for Social Media 🔍
 
 This is a toxic comment classifier web application that uses deep learning models to predict the toxicity levels of a given text input.
 
