@@ -29,16 +29,20 @@ For the best results, we used **BiLSTM** (Bidirectional LSTM) as the classifier,
 
 ```bash
 Toxic Comment Classification Project
-├───data
-│   ├───cleaned-data
-│   └───raw-data
-├───images
 ├───models
+│   ├───saved_models
+│   └───best_bilstm_model.h5
 ├───notebooks
 ├───static
-│   └───css
+│   ├───images
+│   └───style.css
 ├───templates
-└───__pycache__
+│   └───index.html
+├───tasks.db
+├───tokenizer1.pkl
+├───submission.csv
+└───app.py
+
 ```
 
 ### Prerequisites:
