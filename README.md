@@ -30,27 +30,6 @@ The input text data needs to be cleaned and pre-processed for it to be useful fo
 
 For the best results, we used **BiLSTM** (Bidirectional LSTM) as the classifier, which performed well on the test data.
 
-## 📊 Dataset Overview
-The dataset for this project was taken from a competition hosted by Jigsaw on Kaggle.
-
-For preprocessing of the input data and text vectorization, both word and character-based TF-IDF vectorizer outputs are used as inputs to the model for better performance and minimal loss of input features.
-
-## 🧠 Model Building
-For building the classifier, we have used several deep learning models and compared their performance:
-
-- **ANN (Artificial Neural Network)**
-- **LSTM (Long Short-Term Memory)**
-- **BiLSTM (Bidirectional LSTM)**
-- **CNN (Convolutional Neural Network)**
-
-The **BiLSTM** model achieved the highest test accuracy of **99.94%**, and it was chosen for deployment.
-
-### Model Evaluation Metrics:
-- **Validation Accuracy:** 0.9828
-- **Validation F1-Score:** 0.9812
-- **Test Accuracy:** 0.9752
-- **Test F1-Score:** 0.9747
-
 ## 🎯 Getting Started
 ### Project Structure:
 
@@ -77,3 +56,43 @@ Toxic Comment Classification Project
 - Numpy
 - Scikit-learn
 - Matplotlib
+
+## 📊 Dataset Overview
+The dataset for this project was taken from a competition hosted by Jigsaw on Kaggle.
+
+For preprocessing of the input data and text vectorization, both word and character-based TF-IDF vectorizer outputs are used as inputs to the model for better performance and minimal loss of input features.
+
+## 🧠 Model Building
+For building the classifier, we have used several deep learning models and compared their performance:
+
+- **ANN (Artificial Neural Network)**
+- **LSTM (Long Short-Term Memory)**
+- **BiLSTM (Bidirectional LSTM)**
+- **CNN (Convolutional Neural Network)**
+
+The **BiLSTM** model achieved the highest test accuracy of **99.94%**, and it was chosen for deployment.
+
+### Model Evaluation Metrics:
+- **Validation Accuracy:** 0.9828
+- **Validation F1-Score:** 0.9812
+- **Test Accuracy:** 0.9752
+- **Test F1-Score:** 0.9747
+
+## 🎈 Usage
+To run the web app locally:
+
+1. Navigate to the main project folder.
+2. Run the following command to start the Flask server:
+
+```bash
+python app.py
+```
+3. The server will be available at localhost:5000.
+4. Go to localhost:5000, enter a comment, and click "ANALYZE" to predict its toxicity level.
+
+## 🌟 Support
+Please hit the ⭐ button if you like this project. 😄
+
+Thank you for your support!
+
+
