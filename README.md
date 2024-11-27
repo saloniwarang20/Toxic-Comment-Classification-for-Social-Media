@@ -1,27 +1,73 @@
-# Toxic Comment Classification Project
+# Toxic Comment Classification using Flask 🔍
 
-This project uses deep learning models to classify toxic comments into various categories such as "toxic," "severe toxic," "obscene," "threat," "insult," and "identity hate." The goal of this project is to predict whether a given comment contains harmful content based on the provided data.
+[![forthebadge](https://forthebadge.com/images/badges/now-maintained.svg)](https://forthebadge.com)
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Model Architecture](#model-architecture)
-5. [Results](#results)
+This is a toxic comment classifier web application that uses deep learning models to predict the toxicity levels of a given text input.
 
-## Project Overview
-The project focuses on classifying toxic comments using various machine learning models, including:
+[Link to the web app](http://localhost:5000) *(replace with actual deployment link if available)*
+
+Disclaimer: The dataset for this project contains text that may be considered profane, vulgar, or offensive.
+
+## 📝 Table of Contents
+- 🧐 [About](#about)
+- 🎯 [Getting Started](#getting-started)
+- 📊 [Dataset Overview](#dataset-overview)
+- 🧠 [Model Building](#model-building)
+- 🎈 [Usage](#usage)
+- 🌟 [Support](#support)
+
+## 🧐 About
+This is a multi-label classification problem where the given input is a text comment, and the output is a list of toxicity labels it belongs to, such as:
+
+- toxic
+- severe-toxic
+- obscene
+- threat
+- insult
+- identity hate
+
+The input text data needs to be cleaned and pre-processed for it to be useful for the machine learning models.
+
+For the best results, we used **BiLSTM** (Bidirectional LSTM) as the classifier, which performed well on the test data.
+
+## 📊 Dataset Overview
+The dataset for this project was taken from a competition hosted by Jigsaw on Kaggle.
+
+For preprocessing of the input data and text vectorization, both word and character-based TF-IDF vectorizer outputs are used as inputs to the model for better performance and minimal loss of input features.
+
+## 🧠 Model Building
+For building the classifier, we have used several deep learning models and compared their performance:
+
 - **ANN (Artificial Neural Network)**
 - **LSTM (Long Short-Term Memory)**
 - **BiLSTM (Bidirectional LSTM)**
 - **CNN (Convolutional Neural Network)**
 
-The models are trained and evaluated using the **Toxic Comment Classification** dataset, and the best-performing model (BiLSTM) is deployed as part of a Flask application.
+The **BiLSTM** model achieved the highest test accuracy of **99.94%**, and it was chosen for deployment.
 
-## Installation
+### Model Evaluation Metrics:
+- **Validation Accuracy:** 0.9828
+- **Validation F1-Score:** 0.9812
+- **Test Accuracy:** 0.9752
+- **Test F1-Score:** 0.9747
 
+## 🎯 Getting Started
+### Project Structure:
+
+```bash
+Toxic Comment Classification Project
+├───data
+│   ├───cleaned-data
+│   └───raw-data
+├───images
+├───models
+├───notebooks
+├───static
+│   └───css
+├───templates
+└───__pycache__
 ### Prerequisites:
-- Python 3.x
+- **Python 3.x** (>= 3.8)
 - TensorFlow
 - Keras
 - Flask
@@ -30,6 +76,9 @@ The models are trained and evaluated using the **Toxic Comment Classification** 
 - Scikit-learn
 - Matplotlib
 
-You can install the required dependencies by running:
+### Installing:
+
+Use **miniconda** to install Python 3.8 or higher, and then run:
+
 ```bash
 pip install -r requirements.txt
