@@ -1,12 +1,6 @@
 # Toxic Comment Classification using Flask 🔍
 
-[![forthebadge](https://forthebadge.com/images/badges/now-maintained.svg)](https://forthebadge.com)
-
 This is a toxic comment classifier web application that uses deep learning models to predict the toxicity levels of a given text input.
-
-[Link to the web app](http://localhost:5000) *(replace with actual deployment link if available)*
-
-Disclaimer: The dataset for this project contains text that may be considered profane, vulgar, or offensive.
 
 ## 📝 Table of Contents
 - 🧐 [About](#about)
