@@ -66,6 +66,8 @@ Toxic Comment Classification Project
 │   └───css
 ├───templates
 └───__pycache__
+```
+
 ### Prerequisites:
 - **Python 3.x** (>= 3.8)
 - TensorFlow
@@ -75,10 +77,3 @@ Toxic Comment Classification Project
 - Numpy
 - Scikit-learn
 - Matplotlib
-
-### Installing:
-
-Use **miniconda** to install Python 3.8 or higher, and then run:
-
-```bash
-pip install -r requirements.txt
