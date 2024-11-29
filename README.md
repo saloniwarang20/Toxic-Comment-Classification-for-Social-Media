@@ -68,13 +68,7 @@ For building the classifier, we have used several deep learning models and compa
 - **BiLSTM (Bidirectional LSTM)**
 - **CNN (Convolutional Neural Network)**
 
-The **BiLSTM** model achieved the highest test accuracy of **99.94%**, and it was chosen for deployment.
-
-### Model Evaluation Metrics:
-- **Validation Accuracy:** 0.9828
-- **Validation F1-Score:** 0.9812
-- **Test Accuracy:** 0.9752
-- **Test F1-Score:** 0.9747
+The **BiLSTM** model achieved the highest test accuracy of **97.87%**, and it was chosen for deployment.
 
 ## 🎈 Usage
 To run the web app locally:
